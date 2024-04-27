@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; 
+    display: flex;
+  flex-direction: column;
+align-items: center;}
+  
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap')
+
+    * {
+      font-family: "Outfit", sans-serif ;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: hsl(212, 45%, 89%);
+      height: 100vh;
+    }
+
+    .card {
+      max-width: 320px;
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border-radius: 20px;
+      background-color: hsl(0, 0%, 100%);
+      padding: 15px;
+     
+    }
+    .qr-image {
+      max-width: 306px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+    }
+
+    .card .text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 16px 0 16px;
+    }
+    .text .main-text {
+      margin-top: 7px;
+      margin: 7px 8.5px 0;
+      text-align: center;
+      font-weight: 700;
+      color: hsl(218, 44%, 22%);
+    }
+    .text .sub-text {
+      text-align: center;
+      font-weight: 400;
+      color: hsl(220, 15%, 55%);
+      margin: 5%;
+    }
+
+    @media screen and (min-width: 376px) {
+      /* Desktop Styles */
+      .card {
+        width: 70%; /* Adjusted for desktop */
+        max-width: 320px; /* Maximum width for desktop */
+      }
+    }
+
+    
+
+  </style>
+
+</head>
+
+<body>
+  <div class="card">
+    <img src="images\image-qr-code.png" alt="qr img" class="qr-image"/>
+    <div class="text">
+
+ <h2 class="main-text"> Improve your front-end skills by building projects</h2>
+
+  <span class="sub-text"> The QR code to visit Frontend <br>Mentor and take your coding skills to <br>the next level
+  </span>
+  </div>
+</div>
+
+</body>
+</html>
